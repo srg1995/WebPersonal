@@ -1,0 +1,216 @@
+/* *
+* btn-principal: Boton fondo azul
+* btn-secundario: Boton fondo blanco
+*
+* titulo-principal
+* titulo-secundario
+* titulo-h3
+*
+* texto-principal
+* texto-secundario
+*
+*
+*
+*
+*
+*/
+
+h3,
+h4,
+p {
+    margin: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/*btn-primario*/
+a.btn-principal {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 70%;
+    padding: 10px 30px;
+    overflow: hidden;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    background: #3d81e7;
+    border: none;
+}
+
+a.btn-principal:after,
+a.btn-principal:before {
+    width: 80px;
+    height: 200px;
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    top: -60px;
+    position: absolute;
+    transition: none;
+    right: -45%;
+    cursor: pointer;
+}
+
+a.btn-principal:before {
+    left: -48%;
+}
+
+a.btn-principal:hover {
+    background-color: #71a2eb;
+    color: #ffffff;
+}
+
+a.btn-principal:hover:after,
+a.btn-principal:hover:before {
+    transform: rotate(45deg), scaleX(130%);
+    background: rgba(255, 255, 255, 0.8);
+    transition: all ease 0.5s;
+}
+
+a.btn-principal:hover:after {
+    right: 160%;
+}
+
+a.btn-principal:hover:before {
+    left: 160%;
+}
+
+/*fin btn-primario*/
+
+/*btn-secundario*/
+a.btn-secundario {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 70%;
+    padding: 10px 30px;
+    overflow: hidden;
+    color: #3d81e7;
+    border: solid 1px #3d81e7;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    background: #ffffff;
+}
+
+a.btn-secundario:after,
+a.btn-secundario:before {
+    width: 80px;
+    height: 200px;
+    content: '';
+    display: block;
+    transform: rotate(45deg);
+    top: -60px;
+    position: absolute;
+    transition: none;
+    right: -45%;
+    cursor: pointer;
+}
+
+a.btn-secundario:before {
+    left: -48%;
+}
+
+a.btn-secundario:hover {
+    background-color: #71a2eb;
+    color: #ffffff;
+}
+
+a.btn-secundario:hover:after,
+a.btn-secundario:hover:before {
+    transform: rotate(45deg), scaleX(130%);
+    background: rgba(255, 255, 255, 0.8);
+    transition: all ease 0.5s;
+}
+
+a.btn-secundario:hover:after {
+    right: 160%;
+}
+
+a.btn-secundario:hover:before {
+    left: 160%;
+}
+
+/*fin btn-secundario*/
+
+/*titulo-principal*/
+.titulo-principal {
+	color: #167DBE;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+/*fin titulo-principal*/
+
+/*titulo-secundario*/
+.titulo-secundario {
+	color: #167DBE;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+/*fin titulo-secundario*/
+
+/*titulo-h3*/
+.titulo-h3 {
+	color: #167DBE;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*fin titulo-h3*/
+
+/*texto-principal*/
+.texto-principal {
+	color: #656565;
+	font-size: 16px;
+}
+
+/*fin texto-principal*/
+
+/*texto-secundario*/
+.texto-secundario {}
+
+/*fin texto-secundario*/
+
+
+@media(min-width: 576px){
+
+}
+
+@media(min-width: 768px){
+
+}
+
+@media(min-width: 992px){
+
+
+}
+@media(min-width: 1200px){
+
+}
+
+@media(min-width: 1600px){
+    body{
+        max-width: 1600px;
+        position: relative;
+        margin: 0 auto;
+    }
+}

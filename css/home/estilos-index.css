@@ -1,0 +1,197 @@
+nav{
+    z-index: 9;
+    position:fixed;
+}
+#cabecera{
+    background: url(../../img/home/portada-320.jpg)no-repeat center center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    height: 200px;
+    
+}
+#cabecera .transparencia{
+    height: 100%;
+    background: rgba(134, 134, 134, 0.5);
+    background: -moz-linear-gradient(top, rgba(134, 134, 134, 0.5) 0%, rgba(175, 172, 172, 0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(134, 134, 134, 0.5)), color-stop(100%, rgba(175, 172, 172, 0)));
+    background: -webkit-linear-gradient(top, rgba(134, 134, 134, 0.5) 0%, rgba(175, 172, 172, 0) 100%);
+    background: -o-linear-gradient(top, rgba(134, 134, 134, 0.5) 0%, rgba(175, 172, 172, 0) 100%);
+    background: -ms-linear-gradient(top, rgba(134, 134, 134, 0.5) 0%, rgba(175, 172, 172, 0) 100%);
+    background: linear-gradient(to bottom, rgba(134, 134, 134, 0.5) 0%, rgba(175, 172, 172, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#e0897f', GradientType=0 );
+}
+
+#cabecera .titular-info{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    color: white;
+    position: relative;
+    left: 2%;
+    text-align: justify;
+    padding: 15px;
+    max-width: 96%;
+}
+
+#cabecera #flecha-indicador{
+    position: absolute;
+    bottom: 0;
+    font-size: 4em;
+    animation: efectoReboteMovil .7s infinite linear alternate;
+    color: #167DBE;
+    left:20%
+}
+
+#contenedor-habilidades{
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+#contenedor-habilidades .habilidades{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 60px 0 60px 0;
+    width: 100%;
+}
+#contenedor-habilidades .habilidades .skill img{
+    max-width: 100%;
+}
+
+#contenedor-habilidades .habilidades .skill .amimacion-img{
+    animation: efectoGiro 1s ease-in;
+}
+
+#contenedor-ultimos-proyectos{
+    padding: 50px 10%;
+}
+
+#contenedor-plguins{
+    position: relative;
+    width: 100%;
+    background-color: #f9f9f9 ;
+    padding: 40px 0;
+}
+
+#contenedor-plguins .plugin{
+    width: 20%;
+    left: 40%;
+    right: 40%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    z-index: 9;
+    overflow: hidden;
+    text-align: center;
+}
+
+#contenedor-plguins .plugin:hover img{
+    animation: hoverPluginImg 200ms ease-in;
+    animation-fill-mode: forwards;
+    width: 100%;
+    transform: scaleX(1.2);
+}
+
+
+#contenedor-plguins .plugin .descripcion{
+    padding: 20px;
+}
+
+#contenedor-plguins .plugin img{
+    width: 100%;
+    animation: noHoverPluginImg 200ms ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+#contenedor-plguins .plugin:first-child{
+    animation: desplazamientoCentroIzqd 1s ease-in;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    position: absolute;
+}
+
+#contenedor-plguins .plugin:last-child{
+    animation: desplazamientoCentroDrch 1s ease-in;
+    animation-fill-mode: forwards;
+    z-index: 1;
+    position: absolute;
+}
+
+#contenedor-plguins .plugin:first-child.anima{
+    animation: desplazamientoIzqd 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+#contenedor-plguins .plugin:last-child.anima{
+    animation: desplazamientoDrch 1s ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+
+@media(min-width: 576px){
+    #cabecera{
+        /* background: url(../../img/home/portada-320.jpg); */
+        /* background-size: contain; */
+        /* background-repeat: no-repeat; */
+        height: 250px;
+    }
+    #cabecera #flecha-indicador{
+        left:auto;
+    }
+}
+
+@media(min-width: 768px){
+    #cabecera{
+        background: url(../../img/home/portada-320.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+    }
+
+
+
+    #cabecera .titular-info{
+        max-width: 400px;
+    }
+
+    #contenedor-habilidades{
+        margin-top: 60px;
+    }
+
+    #cabecera #flecha-indicador{
+        animation: efectoRebote .7s infinite linear alternate;
+        margin-left: 0;
+    }
+}
+
+@media(min-width: 992px){
+    #cabecera{
+        height: 350px;
+    }
+
+}
+@media(min-width: 1200px){
+    #cabecera{
+        height: 450px;
+    }
+}
+
+@media(min-width: 1600px){
+    body{
+        max-width: 1600px;
+        position: relative;
+        margin: 0 auto;
+    }
+    #menu-principal{
+        position:fixed;
+        width: 1600px;
+        max-width: 100%;
+    }
+
+    #cabecera{
+        height: 500px;
+    }
+}

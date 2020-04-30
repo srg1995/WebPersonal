@@ -1,0 +1,57 @@
+#contenedor-flexbox{
+    border: solid 1px #000000;
+    border-radius: 10px;
+}
+
+#contenedor-flexbox h2{
+    text-align: center;
+}
+
+#contenedor-flexbox .contenedor-padre{
+    display: flex;
+    height: 400px;
+}
+
+#contenedor-flexbox .contenedor-padre .contenedor-hijo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 40px;
+    border: dashed 1px #333999;
+}
+
+.hijo{
+    display: inline-flex;
+    align-items: center;
+}
+
+.contenedor-tooltip-info{
+    position: relative;
+}
+.texto-tooltip{
+    visibility: hidden;
+    position: absolute;
+    width: 215px;
+    left: -217px;
+    top:-2px;
+    border:solid 1px black;
+    background: white;
+    text-align: left;
+    border-radius: 3px;
+    padding: 6px;
+    z-index: 1;
+}
+
+
+.texto-tooltip::after {
+    content: "";
+    position: absolute;
+    border-width: 5px;
+}
+.contenedor-tooltip-info:hover .texto-tooltip{
+    visibility: visible;
+}
+
+#estilos-flexbox{
+}

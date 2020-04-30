@@ -1,0 +1,45 @@
+
+#owl-carousel-proyectos .owl-item .item{
+    transform: scale(0.9);
+    border-radius: 30px;
+    overflow: hidden;
+    opacity: 0.4;
+    margin-top: 30px;
+    
+}
+
+#owl-carousel-proyectos .owl-item.active .item{
+    transform: scale(1);
+    overflow: hidden;
+    opacity: 1;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+    background: rgba(240,100,41,1);
+}
+
+#owl-carousel-proyectos .owl-item .item .contenedor-proyecto{
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    background: red;
+}
+
+
+#owl-carousel-proyectos .owl-item .item .contenedor-proyecto .contenedor-info-proyecto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#owl-carousel-proyectos .owl-item .item .contenedor-proyecto .contenedor-info-proyecto img{
+    width: 150px;
+    height: 150px;
+}
+
+
+
