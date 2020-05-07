@@ -6,7 +6,7 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4'],
-        sectionsColor: ['#167DBE', '#ee005a', '#2C3E50', '#39C'],
+        sectionsColor: ['#167DBE', '#338DC6', '#509ECE', '#6DAED6'],
         navigation: {
             'position': 'right',
                'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
