@@ -6,9 +6,9 @@ $(document).ready(function() {
     $('#pagepiling').pagepiling({
         menu: '#menu',
         anchors: ['page1', 'page2', 'page3', 'page4'],
-        sectionsColor: ['#167DBE', '#338DC6', '#509ECE', '#6DAED6'],
+        sectionsColor: ['#B2EAFB', '#C1EEFC', '#D1F3FD', '#E0F7FD'],
         navigation: {
-            'position': 'right',
+            'position': 'left',
                'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
            },
         afterRender: function(){
