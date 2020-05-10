@@ -3,13 +3,13 @@ $(document).ready(function() {
     /*
     * Plugin intialization
     */
-    $('#pagepiling').pagepiling({
+    $('#trayectoria').pagepiling({
         menu: '#menu',
-        anchors: ['page1', 'page2', 'page3', 'page4'],
-        sectionsColor: ['#B2EAFB', '#C1EEFC', '#D1F3FD', '#E0F7FD'],
+        anchors: ['trayectoria1', 'trayectoria2', 'trayectoria3', 'trayectoria4'],
+        sectionsColor: ['#83DEF9', '#A2E6FB', '#C1EEFC', '#E0F7FD'],
         navigation: {
-            'position': 'left',
-               'tooltips': ['Page 1', 'Page 2', 'Page 3', 'Page 4']
+            'position': 'right',
+               'tooltips': ['trayectoria 1', 'trayectoria 2', 'trayectoria 3', 'trayectoria 4']
            },
         afterRender: function(){
             $('#pp-nav').addClass('custom');
@@ -21,19 +21,5 @@ $(document).ready(function() {
                 $('#pp-nav').addClass('custom');
             }
         }
-    });
-
-
-    /*
-    * Internal use of the demo website
-    */
-    $('#showExamples').click(function(e){
-        e.stopPropagation();
-        e.preventDefault();
-        $('#examplesList').toggle();
-    });
-
-    $('html').click(function(){
-        $('#examplesList').hide();
     });
 });
