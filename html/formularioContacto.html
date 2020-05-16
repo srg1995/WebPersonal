@@ -20,8 +20,7 @@
     <!--COMUNES-->
     
     <!-- estilos propios -->
-    <script src="../js/juego-funcionalidad/keypress.js"></script>
-    <script src="../js/juego-funcionalidad/juego.js"></script>
+
     <!-- fin estilos propios-->
 </head>
 <body>
@@ -47,15 +46,57 @@
                     <a class="nav-link" href="./videojuego.html">Videojuegos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./formularioContacto.html">Sobre mi</a>
+                    <a class="nav-link" href="./formularioContacto.html">Contacto</a>
                 </li>
             </ul>
         </div>
     </nav>
     <section>
-        <form action="">
-            fdfd
+        <form id="formulario-contacto" class="needs-validation" novalidate>
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control" id="nombre" aria-describedby="nombreError" placeholder="introducir nombre" required>
+                <div class="invalid-feedback"><b>Nombre</b> es obligatorio</div>
+            </div>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" aria-describedby="nombreError" placeholder="introducir apellidos" required>
+                <div class="invalid-feedback"><b>Apellidos</b> es obligatorio</div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" aria-describedby="nombreError" placeholder="introducir email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <div class="invalid-feedback"><b>Email</b> es obligatorio</div>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control" id="mensaje" aria-describedby="nombreError" placeholder="introducir mensaje" required></textarea>
+                <div class="invalid-feedback"><b>Mensaje</b> es obligatorio</div>
+            </div>
+            <button id="btn-enviar-contacto" class="btn btn-primary" type="submit">Submit form</button>
+            <!--<div class="form-group">
+                <label for="exampleFormControlFile1">Example file input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>-->
         </form>
     </section>
+
+    <div id="modal-respuesta" class="modal show" tabindex="-1" role="dialog" data-show="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Formulario de Contacto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <script src="../js/formularioContacto/formularioContacto.js"></script>
 </body>
 </html>

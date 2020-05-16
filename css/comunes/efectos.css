@@ -118,3 +118,13 @@
 		background-color: #167DBE90;
 	}
 }
+
+
+@keyframes openMenu{
+	from{
+		height: 0;
+	}
+	to{
+		height: 100%;
+	}
+}
