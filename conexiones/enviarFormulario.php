@@ -28,14 +28,14 @@ try {
     $mail->isSMTP();                                               // Activar envio SMTP
     $mail->Host  = 'MV2016101009001.dnssw.net';                     // Servidor SMTP
     $mail->SMTPAuth  = true;                                       // Identificacion SMTP
-    $mail->Username  = 'ssacriss@ssacriss.com.es';                  // Usuario SMTP
-    $mail->Password  = '25Cristina!95';             // Contraseña SMTP
+    $mail->Username  = 'sacris@ssacriss.com.es';                  // Usuario SMTP
+    $mail->Password  = 'AO5*gxL7?';             // Contraseña SMTP
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
     $mail->Port  = 587;
     $mail->setFrom($obj->email);                // Remitente del correo
 
     // Destinatarios
-    $mail->addAddress('ssacriss@ssacriss.com.es', 'ssacriss');  // Email y nombre del destinatario
+    $mail->addAddress('sacris@ssacriss.com.es');  // Email y nombre del destinatario
 
     // Contenido del correo
     $mail->isHTML(true);
