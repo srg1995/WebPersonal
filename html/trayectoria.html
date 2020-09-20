@@ -1,137 +1,120 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Curriculum | Trayectoria</title>
-
-    <!--COMUNES-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/comunes/menu.css">
-    <link rel="stylesheet" href="./css/comunes/comunes.css">
-    <link rel="stylesheet" href="./css/comunes/footer.css">
-
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="./js/comunes/menu.js"></script>
-    <!--COMUNES-->
-    <link rel="stylesheet" href="../css/comunes/efectos.css">
-	<link rel="stylesheet" type="text/css" href="../css/trayectoria/trayectoria.css" />
+    <title>Document</title>
 
 
+        <!--COMUNES-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/comunes/menu.css">
+        <link rel="stylesheet" href="./css/comunes/comunes.css">
+        <link rel="stylesheet" href="./css/comunes/footer.css">
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="./js/comunes/menu.js"></script>
+        <!--COMUNES-->
+        <link rel="stylesheet" href="../css/comunes/efectos.css">
 
-    <script type="text/javascript" src="../js/comunes/jquery.pagepiling.min.js"></script>
-    <script type="text/javascript" src="../js/trayectoria/trayectoria.js"></script>
 
+    <script src="../js/prueba.js"></script>
+    <style>
+
+    .trayectoria{
+        display: none;
+    }
+    .trayectoria1{
+        display: block;
+    }
+    .row{
+        padding: 0;
+        margin: 0;
+    }
+    section.row{
+        padding: 0 5%;
+    }
+    ul{
+        display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    }
+    .arbol-nav .arbol{
+        display: flex;
+    }
+    .arbol{
+        list-style: none;
+    }
+
+    .arbol.active{
+        color:red;
+    }
+    .circulo{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #167DBE;
+        display: inline-block;
+    }
+    .arbol.active .circulo{
+        animation: efectoSombreado 1.5s ease-in infinite;
+    }
+    .barra{
+        position: absolute;
+    width: 3px;
+    background: #167DBE;
+    height: 100%;
+    margin-left: 8px;
+    padding: 13px 0;
+    }
+    p{
+        margin: 0;
+    }
+    </style>
 </head>
 <body>
-
-<nav id="menu-principal" class="navbar navbar-expand-lg navbar-light menu-fijo">
-    <button class="navbar-toggler" type="button" data-toggle="collapse"
-    data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-    aria-expanded="false" aria-label="Toggle navigation" id="menu_on">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    <a class="navbar-brand" href="../index.html">Principal</a>
-
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="./flexbox.html">Maquetaci&oacute;n</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./trayectoria.html">Trayectoria</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./videojuego.html">Videojuegos</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./formularioContacto.html">Contacto</a>
-            </li>
+    <section class="row">
+            
+        <ul class="arbol-nav col-5">
+            <div class="barra"></div>
+            <li class="arbol arbol1 active"><p class="circulo"></p><p>CFGM Sistemas microinformaticos y redes</p></li>
+            <li class="arbol arbol2"><p class="circulo"></p><p>CFGS Desarrollo de aplicaciones Multiplataforma</p></li>
+            <li class="arbol arbol3"><p class="circulo"></p><p>CFGS Desarrollo de aplicaciones Web</p></li>
+            <li class="arbol arbol4"><p class="circulo"></p><p>Software Developer en Everis</p></li>
         </ul>
-    </div>
-</nav>
 
-<section id="contenedor-trayectoria">
-	<ul id="menu">
-		<li data-menuanchor="trayectoria1" class="active"><a href="#trayectoria1">CFGM SMR</a></li>
-		<li data-menuanchor="trayectoria2"><a href="#trayectoria2">CFGS DAM</a></li>
-		<li data-menuanchor="trayectoria3"><a href="#trayectoria3">CFGS DAW</a></li>
-        <li data-menuanchor="trayectoria4"><a href="#trayectoria4">EXPERIENCIA</a></li>
-	</ul>
-
-
-	<div id="trayectoria">
-	    <div class="section" id="section1">
-            <div class="contenedor-seccion">
-                <img src="../img/trayectoria/smr.jpg" alt="" class="img-drch">
-                <div class="contenedor-info">
-                    <h2 class="titulo-seccion izqd">T&eacute;cnico de Sistem&aacute;s Microinform&aacute;ticos y Redes</h2>
-                    <div class="lista-seccion izqd">
-                        Este fue mi primer contacto con el mundo de la inform&aacute;tica, sin tener ning&uacute;n conocimiento previo decid&iacute; aventurarme en este mundo.
-                        <br>
-                        En estos primeros dos a&ntilde;os, aprend&iacute; la inform&aacute;tica base, como el manejo de lo relacionado con la ofim&aacute;tica,
-                        el montaje, configuraci&oacute;n e intalaci&oacute;n de ordenadores y servidores, a su vez relacionado montaba mis primeras redes locales virtuales con Cisco y configuraba mis primeros servidores.
-                        <br>
-                        Pero, por encima de todo, lo que m&aacute;s me marc&oacute; fue la asignatura relacionada con el mundo web, en la que hice mis primeros blogs y empec&eacute; a saber que eran los lenguajes html y css.
-                        <br><br>
-                        Ya en las pr&aacute;cticas que realic&eacute; en Plastic Omnuim (Ar&eacute;valo), mont&eacute; las primeras redes, configur&eacute; impresoras y ah&iacute; comenz&oacute; mi andadura en el mundo laboral.
-                    </div>
-                </div>
-            </div>
-            <i class="fas fa-chevron-down" id="flecha-indicador"></i>
-        </div>
-
-	    <div class="section" id="section2">
-            <div class="contenedor-seccion">
-                <div class="contenedor-info">
-                    <h2 class="titulo-seccion drch">T&eacute;cnico Superior en Desarrollo de Aplicaciones Multiplataforma</h2>
-                    <div class="lista-seccion drch">
-                        Con unos conocimientos previos ya adquiridos en el modulo SMR, comenzaba a saber lo que era la programaci&oacute;n, en estos a&ntilde;os aprend&iacute; todo lo relacionado con la programaci&oacute;n base como puede ser el lenguaje C++, SQL, XML etc.
-                        <br>
-                        Despu&eacute;s de un primer a&ntilde;o duro por la gran cantidad de nuevos conceptos, comenc&eacute; a desarrollar mis primeras aplicaciones con Android Studio, HTML, JS y sobre todo JAVA.
-                        <br>
-                        En este &uacute;ltimo a&ntilde;o descubr&iacute; una asignatura que me llamaba bastante la atenci&oacute;n, relacionada con PHP y su framework Laravel.
-                        <br><br>
-                        En este caso, fueron unas pr&aacute;cticas un poco diferentes, algunos alumnos fuimos elegidos para ayudar a la Universidad de Salamanca (Edificio Fonseca), m&aacute;s concretamente migrando varias aplicaciones del departamento Bioqu&iacute;mica,
-                        donde aprendimos bastante del mundo de las mol&eacute;culas, gracias a estas pr&aacute;cticas descubrimos lenguajes como Canvas y nos especializamos m&aacute;s en Laravel.
-                    </div>
-                </div>
-                <img src="../img/trayectoria/dam.jpg" alt="" class="img-izqd">
-            </div>
-            <i class="fas fa-chevron-down" id="flecha-indicador"></i>
-        </div>
-
-	    <div class="section" id="section3">
-            <div class="contenedor-seccion">
-                <img src="../img/trayectoria/daw.jpg" alt="" class="img-drch">
-                <div class="contenedor-info">
-                    <h2 class="titulo-seccion izqd">T&eacute;cnico Superior en Desarrollo de Aplicaciones Web</h2>
-                    <div class="lista-seccion izqd">
-                        Ya por fin sabiendo a lo que me iba a enfrentar, decid&iacute; finalizar mi carrera formativa con este ciclo superior. Solo fue un a&ntilde;o, pero con gran adquisici&oacute;n de conocimientos.
-                        <br>
-                        En este a&ntilde;o descubr&iacute; muchos lenguajes y plugins, librer&iacute;as etc. que sab&iacute;a que me ser&iacute;an de gran ayuda en un futuro, como por ejemplo PHP, Bootstrap, JQUERY, etc.
-                        <br><br>
-                        Las pr&aacute;cticas las desarroll&eacute; en mi actual empresa, Everis, inagurada en Salamanca meses antes. Desemboqu&eacute; en un peque&ntilde;o equipo de seis personas que se encargaban de las webs relacionadas con la parte comercial de Iberdrola.
-                        Era un grupo peque&ntilde;o pero con potencial, donde aprend&iacute; bastante y decidieron contar conmigo para continuar el proyecto.
-                    </div>
-                </div>
-            </div>
-            <i class="fas fa-chevron-down" id="flecha-indicador"></i>
-        </div>
-
-        <div class="section" id="section4">
-            <div class="contenedor-seccion">
-                <div class="contenedor-info">
-                    <h2 class="titulo-seccion drch">T&eacute;cnico Superior en Desarrollo de Aplicaciones Web</h2>
-                    <div class="lista-seccion drch">
-                        Con unos conocimientos previos ya adquiridos en el modulo SMR, comenzaba a saber lo que era la programaci&oacute;, en estos a&ntilde;os aprend&iacute; todo lo relacionado con la programaci&oacute;n base como puede ser el lenguaje C++, SQL, XML etc.
+        <div class="trayectorias col-7">
+            <div class="trayectoria trayectoria1"> 
+                Este fue mi primer contacto con el mundo de la inform&aacute;tica, sin tener ning&uacute;n conocimiento previo decid&iacute; aventurarme en este mundo.
+                <br>
+                En estos primeros dos a&ntilde;os, aprend&iacute; la inform&aacute;tica base, como el manejo de lo relacionado con la ofim&aacute;tica,
+                el montaje, configuraci&oacute;n e intalaci&oacute;n de ordenadores y servidores, a su vez relacionado montaba mis primeras redes locales virtuales con Cisco y configuraba mis primeros servidores.
+                <br>
+                Pero, por encima de todo, lo que m&aacute;s me marc&oacute; fue la asignatura relacionada con el mundo web, en la que hice mis primeros blogs y empec&eacute; a saber que eran los lenguajes html y css.
+                <br><br>
+                Ya en las pr&aacute;cticas que realic&eacute; en Plastic Omnuim (Ar&eacute;valo), mont&eacute; las primeras redes, configur&eacute; impresoras y ah&iacute; comenz&oacute; mi andadura en el mundo laboral.</div>
+            <div class="trayectoria trayectoria2">
+                Con unos conocimientos previos ya adquiridos en el modulo SMR, comenzaba a saber lo que era la programaci&oacute;n, en estos a&ntilde;os aprend&iacute; todo lo relacionado con la programaci&oacute;n base como puede ser el lenguaje C++, SQL, XML etc.
+                <br>
+                Despu&eacute;s de un primer a&ntilde;o duro por la gran cantidad de nuevos conceptos, comenc&eacute; a desarrollar mis primeras aplicaciones con Android Studio, HTML, JS y sobre todo JAVA.
+                <br>
+                En este &uacute;ltimo a&ntilde;o descubr&iacute; una asignatura que me llamaba bastante la atenci&oacute;n, relacionada con PHP y su framework Laravel.
+                <br><br>
+                En este caso, fueron unas pr&aacute;cticas un poco diferentes, algunos alumnos fuimos elegidos para ayudar a la Universidad de Salamanca (Edificio Fonseca), m&aacute;s concretamente migrando varias aplicaciones del departamento Bioqu&iacute;mica,
+                donde aprendimos bastante del mundo de las mol&eacute;culas, gracias a estas pr&aacute;cticas descubrimos lenguajes como Canvas y nos especializamos m&aacute;s en Laravel.</div>
+            <div class="trayectoria trayectoria3"> 
+                Ya por fin sabiendo a lo que me iba a enfrentar, decid&iacute; finalizar mi carrera formativa con este ciclo superior. Solo fue un a&ntilde;o, pero con gran adquisici&oacute;n de conocimientos.
+                <br>
+                En este a&ntilde;o descubr&iacute; muchos lenguajes y plugins, librer&iacute;as etc. que sab&iacute;a que me ser&iacute;an de gran ayuda en un futuro, como por ejemplo PHP, Bootstrap, JQUERY, etc.
+                <br><br>
+                Las pr&aacute;cticas las desarroll&eacute; en mi actual empresa, Everis, inagurada en Salamanca meses antes. Desemboqu&eacute; en un peque&ntilde;o equipo de seis personas que se encargaban de las webs relacionadas con la parte comercial de Iberdrola.
+                Era un grupo peque&ntilde;o pero con potencial, donde aprend&iacute; bastante y decidieron contar conmigo para continuar el proyecto.</div>
+            <div class="trayectoria trayectoria4">
+                Con unos conocimientos previos ya adquiridos en el modulo SMR, comenzaba a saber lo que era la programaci&oacute;, en estos a&ntilde;os aprend&iacute; todo lo relacionado con la programaci&oacute;n base como puede ser el lenguaje C++, SQL, XML etc.
                         <br>
                         Despu&eacute;s de un primer a&ntilde;o duro por la gran cantidad de nuevos conceptos, comenc&eacute; a desarrollar mis primeras aplicaciones con Androd Studio, HTML, JS y sobre todo JAVA.
                         <br>
@@ -139,13 +122,9 @@
                         <br><br>
                         En este caso, fueron unas pr&aacute;cticas un poco diferentes, algunos alumnos fuimos elegidos para ayudar a la Universidad de Salamanca(Edificio Fonseca), m&aacute;s concretamente migrando varias aplicaciones del departamento Bioqu&iacute;mica,
                         donde aprendimos bastante del mundo de las mol&eacute;culas, gracias a estas pr&aacute;cticas descubrimos lenguajes como Canvas y nos especializamos m&aacute;s de Laravel.
-                    </div>
-                </div>
-                <img src="../img/trayectoria/dam.jpg" alt="" class="img-izqd">
             </div>
         </div>
-
-	</div>
-</section>
+    </section>
+    
 </body>
 </html>
